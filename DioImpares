@@ -1,0 +1,25 @@
+using System; 
+
+class minhaClasse {
+
+        public static void Main()
+        {
+            int n;
+            int j;
+            n = int.Parse(Console.ReadLine());
+            
+           // Console.WriteLine("Insira um valor entre 1 a 1000:" );
+            
+            if (n >= 1 & n <= 1000)
+            {
+              for (int i = 0; i <= n; i++) //complete seu codigo
+              {
+                j = i%2;
+                if(j > 0)
+                {
+                  Console.WriteLine("" + i );
+                } 
+              }
+            }
+        }
+}
