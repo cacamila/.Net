@@ -1,0 +1,31 @@
+using System;
+
+class Program {
+
+    static void Main(string[] args) { 
+
+        
+        float media = 0;
+        float mediatotal;
+        int auxiliarmedia = 0;
+        float valor;
+
+          while(true) { 
+            Console.WriteLine("Insira entre 1 a 10:" );
+            valor = float.Parse(Console.ReadLine());
+            if (valor >= 0 && valor <= 10){
+              media = media + valor;
+              auxiliarmedia = auxiliarmedia + 1;
+              
+              if(auxiliarmedia == 2){
+                mediatotal = media/2;
+                Console.WriteLine($"media = {mediatotal}");
+              break;
+              }
+            }else{
+              Console.WriteLine("nota invalida");
+            }
+          }       
+      }
+
+}
