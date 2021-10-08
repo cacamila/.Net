@@ -1,0 +1,30 @@
+using System; 
+
+class minhaClasse {
+
+    static void Main(string[] args) { 
+
+        float [] soma = new float[4];
+        float media = 0;
+        float mediatotal;
+        int auxiliarmedia = 0;
+
+          for(int i=0; i < soma.Length; i++) {
+            //Console.WriteLine("Insira entre 1 a 10:" );
+            soma [i] = float.Parse(Console.ReadLine());
+            
+            if (soma [i] >= 0 && soma [i] <= 10){
+              media = media + soma [i];
+              auxiliarmedia = auxiliarmedia + 1;
+              
+              if(auxiliarmedia == 2){
+                mediatotal = media/2;
+                Console.WriteLine($"media = {mediatotal}");
+              }
+            }else{
+              Console.WriteLine("nota invalida");
+            }
+          }       
+      }
+
+}
